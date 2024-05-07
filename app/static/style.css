@@ -1,10 +1,10 @@
-/* Style the navigation bar */
+
 .topnav {
     overflow: hidden;
     background-color: #333;
   }
   
-  /* Style the links inside the navigation bar */
+
   .topnav a {
     float: left;
     display: block;
@@ -14,24 +14,24 @@
     text-decoration: none;
   }
   
-  /* Change the color of links on hover */
+
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Add a color to the active/current link */
+
   .topnav a.active {
     background-color: #4CAF50;
     color: white;
   }
   
-  /* Hide the link that should open and close the navigation on small screens */
+
   .topnav .icon {
     display: none;
   }
   
-  /* Add media queries for responsiveness - show/hide the navigation menu on small screens */
+
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -40,7 +40,7 @@
     }
   }
   
-  /* When the screen is less than 600 pixels wide, show/hide the links inside the navigation menu */
+
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
@@ -70,7 +70,7 @@ body {
     font-family: 'Montserrat', 'serif';
 }
   h1, h2, h3 {
-    font-family: 'Fjalla One', sans-serif; /* Header font */
+    font-family: 'Abel', sans-serif; /* Header font */
   }
   
   p {
@@ -80,11 +80,12 @@ body {
   header {
     background-color: var(--earth-tone-primary); /* Background color for header */
     color: #fff; /* Text color for header */
+    font-family: 'Arial black', Gadget, sans-serif;
   }
   
   footer {
     background-color: tan;
-    color: #fff; /* Text color for footer */
+    color: #ffffff; /* Text color for footer */
   }
   
   h1 {
