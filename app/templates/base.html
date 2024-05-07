@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" >
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='style.css') }}" >
     <title>Ceneo.pl Web Scraper</title>
 </head>
 <body>
     <header>
         <h1>Ceneo.pl Web Scraper</h1>
-        <div class="topnav" id="myTopnav">
-            <a href="#author" class="Author">Home</a>
-            <a href="#extract">Extract</a>
-            <a href="#index">Index</a>
-            <a href="#product">Product</a>
-            <a href="#products">Products</a>
-            <a href="javascript:void(0);" class="icon" oncglick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        <nav>
+            <li><a href="{{ url_for('author') }}">Author</a></li>
+            <li><a href="{{ url_for('extract') }}">Extract</a></li>
+            <li><a href="{{ url_for('index') }}">Index</a></li>
+            <li><a href="{{ url_for('product',product_id='your_product_id_here') }}">Product</a></li>
+        </nav>
     </header>
     <section>
         {% block content %}
