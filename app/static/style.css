@@ -55,6 +55,12 @@
     }
   }
 
+  body {
+    background-image: url('background-image.jpg');
+    background-repeat: repeat; /* or repeat-x, repeat-y */
+    background-size: auto; /* or cover, contain, etc. */
+}
+
 
 
 
