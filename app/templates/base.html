@@ -9,6 +9,16 @@
 <body>
     <header>
         <h1>Ceneo.pl Web Scraper</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="#author" class="Author">Home</a>
+            <a href="#extract">Extract</a>
+            <a href="#index">Index</a>
+            <a href="#product">Product</a>
+            <a href="#products">Products</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <section>
         {% block content %}
@@ -18,6 +28,16 @@
     <footer>
         <p>Julie Folkerts</p>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
 </body>
 </html>
