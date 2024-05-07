@@ -9,21 +9,24 @@
 <body>
     <header>
         <h1>Ceneo.pl Web Scraper</h1>
+        <nav class="topnav" id="myTopnav">
+            <a href="{{ url_for('author') }}">Author</a>
+            <a href="{{ url_for('extract') }}">Extract</a>
+            <a href="{{ url_for('index') }}">Index</a>
+            <a href="{{ url_for('product', product_id='product_id') }}">Product</a>
+            <!-- Add more links as needed -->
+            <!-- You can add a class to the active link to style it differently -->
+        </nav>
+        <!-- Add a hamburger icon for mobile navigation -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         <!--<nav>
             <li><a href="{{ url_for('author') }}">Author</a></li>
             <li><a href="{{ url_for('extract') }}">Extract</a></li>
             <li><a href="{{ url_for('index') }}">Index</a></li>
-            <li><a href="{{ url_for('product',product_id='your_product_id_here') }}">Product</a></li>
+            <li><a href="{{ url_for('product',product_id='product_id') }}">Product</a></li>
         </nav>-->
-        <div class="topnav" id="myTopnav">
-            <a href="#author" class="Author">Home</a>
-            <a href="#index">Index</a>
-            <a href="#extract">Extract</a>
-            <a href="#product">Product</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div>
     </header>
     <section>
         {% block content %}
@@ -33,16 +36,6 @@
     <footer>
         <p>Julie Folkerts</p>
     </footer>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
 
 </body>
 </html>
