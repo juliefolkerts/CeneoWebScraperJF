@@ -9,12 +9,21 @@
 <body>
     <header>
         <h1>Ceneo.pl Web Scraper</h1>
-        <nav>
+        <!--<nav>
             <li><a href="{{ url_for('author') }}">Author</a></li>
             <li><a href="{{ url_for('extract') }}">Extract</a></li>
             <li><a href="{{ url_for('index') }}">Index</a></li>
             <li><a href="{{ url_for('product',product_id='your_product_id_here') }}">Product</a></li>
-        </nav>
+        </nav>-->
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <section>
         {% block content %}
