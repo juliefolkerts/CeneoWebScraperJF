@@ -1,0 +1,26 @@
+{
+    "product_id": "141552627",
+    "product_name": "Remington Thermacare Pro D5710",
+    "opinions_count": 63,
+    "pros_count": 56,
+    "cona_count": 21,
+    "average_score": 4.777777777777778,
+    "score_distribution": {
+        "0.0": 0,
+        "0.5": 0,
+        "1.0": 0,
+        "1.5": 0,
+        "2.0": 0,
+        "2.5": 0,
+        "3.0": 0,
+        "3.5": 0,
+        "4.0": 14,
+        "4.5": 0,
+        "5.0": 49
+    },
+    "recommendation_distribution": {
+        "true": 63,
+        "false": 0,
+        "NaN": 0
+    }
+}
