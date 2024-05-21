@@ -1,3 +1,4 @@
+from deep_translator import GoogleTranslator
 def extract(ancestor, selector=None, attribute=None, return_list=False):
     if return_list:
         if attribute:

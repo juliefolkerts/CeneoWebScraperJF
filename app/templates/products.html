@@ -1,6 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
-    <p>{% for product in products %}</p>
-        <div class="card">{{product}}</div>
-        {% endfor %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                {% for product in products %}
+                <div class="card mb-3">
+                    <div class="card-header">
+                        {{ product.product_id }}
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Name: {{ product.product_name }}</li>
+                            <li class="list-group-item">Number of opinions: {{ product.opinions_count }}</li>
+                            <li class="list-group-item">Number of advantages: {{ product.pros_count }}</li>
+                            <li class="list-group-item">Number of disadvantages: {{ product.cons_count }}</li>
+                            <li class="list-group-item">Average number of stars: {{ product.average_score }}</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer d-flex justify-content-end">
+                        <button onclick="location.href='{{url_for('download_json', product_id=product.product_id)}}'"class="btn btn-primary mr-2">Download JSON</button>
+                        <button onclick="location.href='{{url_for('download_csv', product_id=product.product_id)}}'"class="btn btn-primary mr-2">Download CSV</button>
+                        <button onclick="location.href='{{url_for('download_xlsx', product_id=product.product_id)}}'"class="btn btn-primary mr-2">Download XLSX</button>
+                    </div>
+                </div>
+                {% endfor %}                                                   
+            </div>
+        </div>
+    </div>
 {% endblock %}
+
+                                              
