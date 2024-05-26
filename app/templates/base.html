@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <h1>Ceneo.pl Web Scraper</h1>
-        <nav class="topnav" id="myTopnav">
+        <h1 class="text-center">Ceneo.pl Web Scraper</h1>
+        <nav class="topnav justify-content-center" id="myTopnav">
             <a href="{{ url_for('index') }}">Home page</a>
             <a href="{{ url_for('extract') }}">Extract</a>
             <a href="{{ url_for('products') }}">Products</a>
@@ -31,9 +31,8 @@
         <p>This is base file</p>
         {% endblock %}
     </section>
-    <footer>
+    <footer class="text-center bg-gray">
         <p>Julie Folkerts</p>
     </footer>
-
 </body>
 </html>

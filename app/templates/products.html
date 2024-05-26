@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container">
+    <div class="container mt-4"> <!-- Add mt-4 class for top margin -->
         <div class="row">
             <div class="col-md-6">
                 {% for product in products %}
@@ -18,9 +18,9 @@
                         </ul>
                     </div>
                     <div class="card-footer d-flex justify-content-end">
-                        <button onclick="location.href='{{url_for('download_json', product_id=product.product_id)}}'"class="btn btn-primary mr-2">Download JSON</button>
-                        <button onclick="location.href='{{url_for('download_csv', product_id=product.product_id)}}'"class="btn btn-primary mr-2">Download CSV</button>
-                        <button onclick="location.href='{{url_for('download_xlsx', product_id=product.product_id)}}'"class="btn btn-primary mr-2">Download XLSX</button>
+                        <button onclick="location.href='{{url_for('download_json', product_id=product.product_id)}}'" class="btn btn-success mr-2">Download JSON</button>
+                        <button onclick="location.href='{{url_for('download_csv', product_id=product.product_id)}}'" class="btn btn-success mr-2">Download CSV</button>
+                        <button onclick="location.href='{{url_for('download_xlsx', product_id=product.product_id)}}'" class="btn btn-success mr-2">Download XLSX</button>
                     </div>
                 </div>
                 {% endfor %}                                                   
@@ -28,5 +28,6 @@
         </div>
     </div>
 {% endblock %}
+
 
                                               
