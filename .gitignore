@@ -162,3 +162,5 @@ cython_debug/
 
 # app
 /app/opinions/
+/app/products/
+/app/static/charts/
