@@ -1,4 +1,4 @@
-from app  import app
+from app import app
 from app import utils
 from flask import render_template, request, redirect, url_for, send_file
 import requests
@@ -48,7 +48,7 @@ def extract():
                         }
                         for key, value in utils.transformations.items():
                             single_opinion[key] = value(single_opinion[key])
-                            all_opinions.append(single_opinion)
+                        all_opinions.append(single_opinion)
                         try:
                             url = "https://www.ceneo.pl"+extract(page_dom, "a.pagination_next", "href")
                         except TypeError:

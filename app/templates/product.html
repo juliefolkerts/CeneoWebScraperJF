@@ -12,8 +12,10 @@
    
 {% block scripts %}
 <script>
-    let table = new DataTable('#opinions', {
-        responsive: true
+    $(document).ready(function() {
+        $('#opinions').DataTable({
+            responsive: true
+        });
     });
 </script>
 {% endblock %}
